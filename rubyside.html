@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<!-- Links to external stylesheets including CSS and Google Fonts -->
+<!-- device-width used to allow responsive layout for mobiles -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<!-- JQuery for scroll animation -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {
+			e.preventDefault();
+
+			var target = this.hash;
+			var $target = $(target);
+
+		$('html, body').animate({
+			'scrollTop': $target.offset().top
+		}, 1000, 'swing', function () {
+			window.location.hash = target;
+		});
+	});
+	});
+</script>
+
+
+<title>Rubyside</title>
+</head>
+
+<body>
+
+<header>
+	<!-- Logo and nav bar inline with a drop shadow -->
+	<img src="img/rubyside.png" alt="Rubyside" class="logo">
+
+	<nav>
+		<ul>
+			<div id="nav"
+			<li><a href="#top">What's Rubyside?</a></li>
+			<li><a href="#bottom">Organisers</a></li>
+			<li><a href="#middle">Upcoming Events</a></li>
+			<li><a href="">RSVP</a></li>
+			</div>
+		</ul>
+	</nav>
+</header>
+<!-- Breaks to move content down -->
+<br><br>
+
+<div id="top">
+<!-- What is Rubyside section -->
+<div class="content">
+	<div class="container">
+	<section class="what-is-rubyside">
+		<h1 class="title-about">What is Rubyside?</h1>
+		<p>Rubyside is an interest group for Ruby and Ruby on Rails Enthusiasts in Liverpool, Merseyside and the surrounding areas.</p>
+	</div>
+	</section>
+	</div>
+<!-- Breaks to separate next section -->
+<br><br>
+</div>
+
+<div id="middle">
+<!-- Upcoming Events section -->
+	<section class="upcoming-events">
+	<div class="details">
+	<div class="container">
+		<h1 class="title-ue">Upcoming Events</h1>
+		<h3>Rubyside #10 Wednesday 30th May 2018 | 6pm - 8pm Lightning Talks</h3>
+			<p>Come and share your knowlege and learn from others at Rubyside's first ever lightning talk session! Venue to be confirmed!</p>
+			<br>
+	<button><a href=""><span>RSVP</span></a></button>
+	<br><br><br>
+		<h3>Last Time Out: Defining The Future Of Content On Rails</h3>
+			<p>Over the past 10 years, the way content is delivered on the web has changed drastically. In the next 10 years, it will change even more. We're not just pushing content to web pages but phones, TVs and more. On Wednesday 22nd February, we invite you to join a discussion on how you think content will be delivered and structured in the future to help shape and build a new open source project for the future on content on Rails.</p>
+	</div>
+	</div>
+	<br><br>
+	</section>
+</div>
+
+<div id="bottom">
+<!-- Organisers section -->
+	<div class="container">
+	<section class="organisers">
+		<h1 class="title-about"><strong>Organisers</strong></h1>
+			
+	<figure>
+	<a href="#">
+  		<img src="img/daniel.png" alt="Daniel">
+  		<figcaption>Daniel</figcaption>
+	</a>
+	</figure>
+	<figure>
+	<a href="#">
+		<img src="img/mike.png" alt="Mike">
+  		<figcaption>Mike</figcaption>
+	</a>
+	</figure>
+	<figure>
+	<a href="#">
+		<img src="img/tom.png" alt="Tom">
+  		<figcaption>Tom</figcaption>
+	</a>
+	</figure>
+	</div>
+	</section>
+</div>
+</div>
+<br>
+<br>
+
+
+<!-- Footer --> 
+<footer class="footer">
+	
+	<ul>
+		<li><strong>Rubyside is hosted by</strong></li>
+		<br>
+		<li><a href="#"><img src="img/cleversteam.png" alt="Cleverstream"></a></li>
+		<br>
+		<li>Suite 4, 1 Church House, Hanover Street, Liverpool, L1 3DN</li>
+	</ul>
+	
+	<br>
+	<ul>
+		<li><a href="#"><i class="fa fa-twitter-square" style="font-size:36px"></i><strong>  Follow us @Rubyside</strong></a></li>
+		<li><a href="#"><i class="fa fa-linkedin-square" style="font-size:36px"></i><strong> LinkedIn Group</strong></a></li>
+		<li><a href="#"><strong>Join the Slack Channel</strong></a></li>
+	</ul>
+	
+</footer>
+</body>
+</html>
